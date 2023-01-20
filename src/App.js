@@ -1,14 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Routes/Routes/Routes';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div className="App">
-    <div className="btn-group btn-group-vertical lg:btn-group-horizontal">
-  <button className="btn btn-active">Button</button>
-  <button className="btn">Button</button>
-  <button className="btn">Button</button>
-</div>
+     <RouterProvider router={router}></RouterProvider>
+      <Toaster></Toaster>
+
+
     </div>
   );
 }
